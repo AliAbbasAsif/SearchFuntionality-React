@@ -13,8 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 import TextField from '@mui/material/TextField'
-import SearchIcon from '@mui/icons-material/Search';
-import Card from '@mui/material/Card';
+ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Data from './Components/carddata';
@@ -26,9 +25,8 @@ import AddIcon from '@mui/icons-material/Add';
 import banner1 from './Images/img1.jpg'
 import TvIcon from '@mui/icons-material/Tv';
 import TimerIcon from '@mui/icons-material/Timer';
-import LightbulbIcon from '@mui/icons-material/Lightbulb';
 import AutoFixNormalIcon from '@mui/icons-material/AutoFixNormal';
-import { fontSize } from '@mui/system';
+
 
 function App() {
   const [Txt, setTxt] = useState("");
@@ -108,6 +106,7 @@ function App() {
 
       <Box sx={{ flexGrow: 1, padding: "30px" }}>
         <Grid container spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 8, md: 16 }}>
+
           {datasearch.map((item, index) => (
             <Grid item xs={2} sm={4} md={4} key={index}>
               <Card sx={{ maxWidth: 345 }}>
